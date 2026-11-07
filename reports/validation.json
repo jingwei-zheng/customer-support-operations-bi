@@ -1,0 +1,13 @@
+{
+  "validated_at": "2026-11-06T13:25:48.924467+00:00",
+  "extract_as_at": "2023-03-14",
+  "total_work_items": 66691,
+  "total_helpdesk_tickets": 52370,
+  "tickets_since_2016": 34426,
+  "open_backlog": 521,
+  "open_at_least_30_days": 296,
+  "median_resolution_hours_recount": 213.6,
+  "python_sql_flags_compared": true,
+  "python_sql_durations_compared": true,
+  "status": "passed"
+}

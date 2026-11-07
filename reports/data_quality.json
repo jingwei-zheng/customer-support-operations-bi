@@ -1,0 +1,18 @@
+{
+  "work_items": 66691,
+  "helpdesk_tickets": 52370,
+  "internal_work_items": 14321,
+  "unknown_priority_work_items": 33965,
+  "unknown_priority_helpdesk": 29270,
+  "helpdesk_created_since_2016": 34426,
+  "open_helpdesk_at_extract": 521,
+  "checks_passed": [
+    "unique_non_null_id",
+    "valid_created_timestamp",
+    "nonnegative_resolution",
+    "historical_extract_boundary",
+    "known_type_vocabulary",
+    "known_priority_vocabulary"
+  ],
+  "validated_at": "2026-11-06T13:25:43.496673+00:00"
+}

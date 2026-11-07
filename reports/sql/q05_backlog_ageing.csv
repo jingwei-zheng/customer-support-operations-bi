@@ -1,0 +1,6 @@
+age_bucket,open_tickets,open_high_severity,share_pct,mean_age_days,max_age_days
+0-7 days,75,43,14.4,3.2,6.8
+7-30 days,150,64,28.8,19.7,29.6
+30-90 days,180,57,34.5,58.9,89.8
+90-365 days,89,31,17.1,218.7,358.5
+365+ days,27,7,5.2,521.1,1146.6

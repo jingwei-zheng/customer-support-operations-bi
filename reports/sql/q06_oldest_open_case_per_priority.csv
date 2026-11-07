@@ -1,0 +1,6 @@
+priority,ticket_id,issue_type,status,created_date,age_days
+Blocker,1003398,Ticket,pending_deployment,2021-11-14,485.6
+High,1000363,HD Service,to_do,2021-04-21,692.7
+Highest,1004389,HD Service,validation,2022-01-06,432.8
+Low,1004976,Ticket,validation,2022-02-08,399.5
+Medium,37285,Ticket,pending_deployment,2020-01-23,1146.6

@@ -1,0 +1,116 @@
+{
+  "checked_at": "2026-11-06T13:25:49.249126+00:00",
+  "database": "customer_ops_bi",
+  "postgres_version": "18.6 (Debian 18.6-1.pgdg13+2)",
+  "baseline_date": "2026-11-01",
+  "checks_passed": 13,
+  "checks_total": 13,
+  "status": "passed",
+  "scope": "Live PostgreSQL queries compared with the report's recorded baseline and Power BI values; DAX is not reevaluated by this command.",
+  "checks": [
+    {
+      "check_id": 1,
+      "check": "All work items, before the helpdesk filter",
+      "postgres_result": 66691.0,
+      "report_baseline": 66691.0,
+      "recorded_powerbi_value": 66691.0,
+      "passed": true
+    },
+    {
+      "check_id": 2,
+      "check": "Helpdesk tickets (Tickets card)",
+      "postgres_result": 52370.0,
+      "report_baseline": 52370.0,
+      "recorded_powerbi_value": 52370.0,
+      "passed": true
+    },
+    {
+      "check_id": 3,
+      "check": "Open backlog",
+      "postgres_result": 521.0,
+      "report_baseline": 521.0,
+      "recorded_powerbi_value": 521.0,
+      "passed": true
+    },
+    {
+      "check_id": 4,
+      "check": "Median resolution, hours (card = hours / 24)",
+      "postgres_result": 213.6,
+      "report_baseline": 213.6,
+      "recorded_powerbi_value": 213.6,
+      "passed": true
+    },
+    {
+      "check_id": 5,
+      "check": "High-severity share of recorded priorities %",
+      "postgres_result": 27.7,
+      "report_baseline": 27.7,
+      "recorded_powerbi_value": 27.7,
+      "passed": true
+    },
+    {
+      "check_id": 6,
+      "check": "Reopen rate %, all years (as on the card)",
+      "postgres_result": 3.8,
+      "report_baseline": 3.8,
+      "recorded_powerbi_value": 3.8,
+      "passed": true
+    },
+    {
+      "check_id": 7,
+      "check": "Reopen rate %, 2016 onward (repo SQL summary)",
+      "postgres_result": 4.5,
+      "report_baseline": 4.5,
+      "recorded_powerbi_value": 4.5,
+      "passed": true
+    },
+    {
+      "check_id": 8,
+      "check": "Tickets 2022 vs 2021 %",
+      "postgres_result": 18.2,
+      "report_baseline": 18.2,
+      "recorded_powerbi_value": 18.2,
+      "passed": true
+    },
+    {
+      "check_id": 9,
+      "check": "'Ticket' share of demand %",
+      "postgres_result": 86.5,
+      "report_baseline": 86.5,
+      "recorded_powerbi_value": 86.5,
+      "passed": true
+    },
+    {
+      "check_id": 10,
+      "check": "Medium share of recorded priorities %",
+      "postgres_result": 70.2,
+      "report_baseline": 70.2,
+      "recorded_powerbi_value": 70.2,
+      "passed": true
+    },
+    {
+      "check_id": 11,
+      "check": "Growth 2016 to 2022 % (typed as +58%)",
+      "postgres_result": 57.8,
+      "report_baseline": 57.8,
+      "recorded_powerbi_value": 57.8,
+      "passed": true
+    },
+    {
+      "check_id": 12,
+      "check": "Growth 2016 to 2020 % (modest growth)",
+      "postgres_result": 9.4,
+      "report_baseline": 9.4,
+      "recorded_powerbi_value": 9.4,
+      "passed": true
+    },
+    {
+      "check_id": 13,
+      "check": "Open tickets at least 30 days old % (shown as 57%)",
+      "postgres_result": 56.8,
+      "report_baseline": 56.8,
+      "recorded_powerbi_value": 56.8,
+      "passed": true
+    }
+  ]
+}

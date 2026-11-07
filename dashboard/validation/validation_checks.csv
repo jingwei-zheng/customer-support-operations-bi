@@ -1,0 +1,14 @@
+check_id,section,check,sql_query,sql_result
+1,Reconciliation,"All work items, before the helpdesk filter",SELECT count(*) FROM analytics.fact_ticket;,66691.0
+2,Overview cards,Helpdesk tickets (Tickets card),SELECT count(*) FROM analytics.fact_ticket WHERE is_helpdesk_ticket;,52370.0
+3,Overview cards,Open backlog,SELECT count(*) FROM analytics.fact_ticket WHERE is_helpdesk_ticket AND is_open_backlog;,521.0
+4,Overview cards,"Median resolution, hours (card = hours / 24)","SELECT round(percentile_cont(0.5) WITHIN GROUP (ORDER BY resolution_hours)::numeric, 1) FROM analytics.fact_ticket WHERE is_helpdesk_ticket AND is_resolved AND in_system_period;",213.6
+5,Overview cards,High-severity share of recorded priorities %,"SELECT round(100.0 * count(*) FILTER (WHERE is_high_severity) / NULLIF(count(*) FILTER (WHERE priority_known), 0), 1) FROM analytics.fact_ticket WHERE is_helpdesk_ticket;",27.7
+6,Overview cards,"Reopen rate %, all years (as on the card)","SELECT round(100.0 * count(*) FILTER (WHERE was_reopened) / NULLIF(count(*), 0), 1) FROM analytics.fact_ticket WHERE is_helpdesk_ticket;",3.8
+7,SQL definition,"Reopen rate %, 2016 onward (repo SQL summary)","SELECT round(100.0 * count(*) FILTER (WHERE was_reopened) / NULLIF(count(*), 0), 1) FROM analytics.fact_ticket WHERE is_helpdesk_ticket AND in_system_period;",4.5
+8,Overview cards,Tickets 2022 vs 2021 %,"SELECT round(100.0 * (count(*) FILTER (WHERE created_month BETWEEN '2022-01' AND '2022-12') - count(*) FILTER (WHERE created_month BETWEEN '2021-01' AND '2021-12')) / NULLIF(count(*) FILTER (WHERE created_month BETWEEN '2021-01' AND '2021-12'), 0), 1) FROM analytics.fact_ticket WHERE is_helpdesk_ticket;",18.2
+9,Demand chart,'Ticket' share of demand %,"SELECT round(100.0 * count(*) FILTER (WHERE issue_type = 'Ticket') / NULLIF(count(*), 0), 1) FROM analytics.fact_ticket WHERE is_helpdesk_ticket;",86.5
+10,Priority chart,Medium share of recorded priorities %,"SELECT round(100.0 * count(*) FILTER (WHERE priority = 'Medium') / NULLIF(count(*), 0), 1) FROM analytics.fact_ticket WHERE is_helpdesk_ticket AND priority_known;",70.2
+11,Typed insights,Growth 2016 to 2022 % (typed as +58%),"SELECT round(100.0 * (1.0 * count(*) FILTER (WHERE created_month BETWEEN '2022-01' AND '2022-12') / NULLIF(count(*) FILTER (WHERE created_month BETWEEN '2016-01' AND '2016-12'), 0) - 1), 1) FROM analytics.fact_ticket WHERE is_helpdesk_ticket;",57.8
+12,Typed insights,Growth 2016 to 2020 % (modest growth),"SELECT round(100.0 * (1.0 * count(*) FILTER (WHERE created_month BETWEEN '2020-01' AND '2020-12') / NULLIF(count(*) FILTER (WHERE created_month BETWEEN '2016-01' AND '2016-12'), 0) - 1), 1) FROM analytics.fact_ticket WHERE is_helpdesk_ticket;",9.4
+13,Typed insights,Open tickets at least 30 days old % (shown as 57%),"SELECT round(100.0 * count(*) FILTER (WHERE age_days_at_extract >= 30) / NULLIF(count(*), 0), 1) FROM analytics.fact_ticket WHERE is_helpdesk_ticket AND is_open_backlog;",56.8

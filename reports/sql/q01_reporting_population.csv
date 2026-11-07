@@ -1,0 +1,2 @@
+total_helpdesk_tickets,total_work_items,tickets_since_2016,first_ticket_date,last_ticket_date,open_backlog,median_resolution_hours,mean_resolution_hours,p90_resolution_hours,high_severity_share_pct,distinct_reporters,distinct_projects,distinct_assignees
+52370,66691,34426,2007-04-15,2023-03-14,521,213.6,1025.9,1991.7,27.7,1067,353,349

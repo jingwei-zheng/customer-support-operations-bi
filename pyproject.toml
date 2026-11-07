@@ -1,0 +1,23 @@
+[project]
+name = "customer-support-operations-bi"
+version = "0.1.0"
+description = "SQL and Power BI reporting over historical helpdesk demand, service time and backlog."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Jingwei Zheng" }]
+dependencies = ["pandas>=2.2", "numpy>=1.26", "psycopg[binary]>=3.2", "python-dotenv>=1.0", "requests>=2.32"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.2"]
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["src*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

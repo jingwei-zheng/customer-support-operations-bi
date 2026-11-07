@@ -1,0 +1,93 @@
+[
+  {
+    "validation_checks[check_id]": 1,
+    "validation_checks[check]": "All work items, before the helpdesk filter",
+    "validation_checks[sql_result]": 66691.0,
+    "[Power BI]": 66691.0,
+    "[Status]": "✓ Match"
+  },
+  {
+    "validation_checks[check_id]": 2,
+    "validation_checks[check]": "Helpdesk tickets (Tickets card)",
+    "validation_checks[sql_result]": 52370.0,
+    "[Power BI]": 52370.0,
+    "[Status]": "✓ Match"
+  },
+  {
+    "validation_checks[check_id]": 3,
+    "validation_checks[check]": "Open backlog",
+    "validation_checks[sql_result]": 521.0,
+    "[Power BI]": 521.0,
+    "[Status]": "✓ Match"
+  },
+  {
+    "validation_checks[check_id]": 4,
+    "validation_checks[check]": "Median resolution, hours (card = hours / 24)",
+    "validation_checks[sql_result]": 213.6,
+    "[Power BI]": 213.6,
+    "[Status]": "✓ Match"
+  },
+  {
+    "validation_checks[check_id]": 5,
+    "validation_checks[check]": "High-severity share of recorded priorities %",
+    "validation_checks[sql_result]": 27.7,
+    "[Power BI]": 27.7,
+    "[Status]": "✓ Match"
+  },
+  {
+    "validation_checks[check_id]": 6,
+    "validation_checks[check]": "Reopen rate %, all years (as on the card)",
+    "validation_checks[sql_result]": 3.8,
+    "[Power BI]": 3.8,
+    "[Status]": "✓ Match"
+  },
+  {
+    "validation_checks[check_id]": 7,
+    "validation_checks[check]": "Reopen rate %, 2016 onward (repo SQL summary)",
+    "validation_checks[sql_result]": 4.5,
+    "[Power BI]": 4.5,
+    "[Status]": "✓ Match"
+  },
+  {
+    "validation_checks[check_id]": 8,
+    "validation_checks[check]": "Tickets 2022 vs 2021 %",
+    "validation_checks[sql_result]": 18.2,
+    "[Power BI]": 18.2,
+    "[Status]": "✓ Match"
+  },
+  {
+    "validation_checks[check_id]": 9,
+    "validation_checks[check]": "'Ticket' share of demand %",
+    "validation_checks[sql_result]": 86.5,
+    "[Power BI]": 86.5,
+    "[Status]": "✓ Match"
+  },
+  {
+    "validation_checks[check_id]": 10,
+    "validation_checks[check]": "Medium share of recorded priorities %",
+    "validation_checks[sql_result]": 70.2,
+    "[Power BI]": 70.2,
+    "[Status]": "✓ Match"
+  },
+  {
+    "validation_checks[check_id]": 11,
+    "validation_checks[check]": "Growth 2016 to 2022 % (typed as +58%)",
+    "validation_checks[sql_result]": 57.8,
+    "[Power BI]": 57.8,
+    "[Status]": "✓ Match"
+  },
+  {
+    "validation_checks[check_id]": 12,
+    "validation_checks[check]": "Growth 2016 to 2020 % (modest growth)",
+    "validation_checks[sql_result]": 9.4,
+    "[Power BI]": 9.4,
+    "[Status]": "✓ Match"
+  },
+  {
+    "validation_checks[check_id]": 13,
+    "validation_checks[check]": "Open tickets at least 30 days old % (shown as 57%)",
+    "validation_checks[sql_result]": 56.8,
+    "[Power BI]": 56.8,
+    "[Status]": "✓ Match"
+  }
+]

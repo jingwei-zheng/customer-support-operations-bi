@@ -1,0 +1,7 @@
+priority,priority_rank,tickets,share_pct,median_resolution_hours,open_tickets
+Blocker,6,596,2.58,81.6,12
+Highest,5,1885,8.16,88.7,50
+High,4,3921,16.97,118.0,140
+Medium,3,16208,70.16,195.4,280
+Low,2,444,1.92,189.9,39
+Lowest,1,46,0.20,269.9,0
